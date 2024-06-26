@@ -4,20 +4,25 @@
     <title>Umfrage Weiterleitung</title>
     <script type="text/javascript">
         function redirect() {
-            var survey1 = "https://forms.gle/XF8TNgqpYtnNtH8D7";
-            var survey2 = "https://forms.gle/zEgKvpZEhaXMk2Y88";
+            var survey1 = "https://forms.gle/Ya8vTetfmgufW3WL8";
+            var survey2 = "https://forms.gle/yXiTaTZ4GRWVW6vi7";
+            var survey3 = "https://forms.gle/q1xi4tktb8NrKz5r7";
+            var survey4 = "https://forms.gle/Gfw1qrsocp77jrcg7";
             
             // Zufällige Auswahl der Umfrage
             var random = Math.random();
-            if (random < 0.5) {
+            if (random < 0.25) {
                 window.location.href = survey1;
-            } else {
+            } else if (random < 0.5) {
                 window.location.href = survey2;
+            } else if (random < 0.75) {
+                window.location.href = survey3;
+            } else {
+                window.location.href = survey4;
             }
         }
     </script>
 </head>
 <body onload="redirect()">
     <p>Sie werden zur Umfrage weitergeleitet...</p>
-</body>
-</html>
+
